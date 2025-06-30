@@ -253,11 +253,6 @@ function scrollToSection(sectionId) {
         setTimeout(() => {
             target.style.boxShadow = '';
         }, 2000);
-        
-        // Show notification
-        showNotification('Đã chuyển đến danh sách lớp!');
-    } else {
-        showNotification('Không tìm thấy section!', 'error');
     }
 }
 

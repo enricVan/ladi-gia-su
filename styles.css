@@ -178,7 +178,7 @@ body {
     width: 100%;
     height: 100%;
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/><circle cx="25" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>') repeat;
-    animation: float 20s ease-in-out infinite;
+    animation: float 10s ease-in-out infinite;
 }
 
 /* Card hover effects */
@@ -515,17 +515,17 @@ body::before {
 .particle {
     position: absolute;
     opacity: 0.6;
-    animation: floatParticle 20s infinite linear;
+    animation: floatParticle 10s infinite linear;
     font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.3);
 }
 
-.atom-1 { top: 20%; left: 10%; animation-delay: 0s; animation-duration: 12s; }
-.bulb-1 { top: 60%; left: 80%; animation-delay: 3s; animation-duration: 10s; }
-.book-1 { top: 30%; left: 70%; animation-delay: 6s; animation-duration: 14s; }
-.graduation-1 { top: 70%; left: 20%; animation-delay: 9s; animation-duration: 11s; }
-.calculator-1 { top: 15%; left: 85%; animation-delay: 12s; animation-duration: 13s; }
-.globe-1 { top: 80%; left: 60%; animation-delay: 15s; animation-duration: 10s; }
+.atom-1 { top: 20%; left: 10%; animation-delay: 0s; animation-duration: 6s; }
+.bulb-1 { top: 60%; left: 80%; animation-delay: 3s; animation-duration: 5s; }
+.book-1 { top: 30%; left: 70%; animation-delay: 6s; animation-duration: 7s; }
+.graduation-1 { top: 70%; left: 20%; animation-delay: 9s; animation-duration: 5.5s; }
+.calculator-1 { top: 15%; left: 85%; animation-delay: 12s; animation-duration: 6.5s; }
+.globe-1 { top: 80%; left: 60%; animation-delay: 15s; animation-duration: 5s; }
 
 @keyframes floatParticle {
     0% {
@@ -555,7 +555,7 @@ body::before {
     position: absolute;
     font-size: 2rem;
     opacity: 0.4;
-    animation: complexFloat 15s infinite ease-in-out;
+    animation: complexFloat 8s infinite ease-in-out;
 }
 
 .icon-1 { top: 10%; left: 5%; animation-delay: 0s; }
@@ -598,7 +598,7 @@ body::before {
 .rule-icon {
     position: absolute;
     font-size: 3rem;
-    animation: slowFloat 20s infinite ease-in-out;
+    animation: slowFloat 10s infinite ease-in-out;
 }
 
 .icon-r1 { top: 15%; left: 8%; animation-delay: 0s; }
@@ -952,7 +952,7 @@ body::before {
 .float-graphic {
     position: absolute;
     opacity: 0.7;
-    animation: floatNew 12s ease-in-out infinite;
+    animation: floatNew 6s ease-in-out infinite;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
 }
 
@@ -2488,7 +2488,7 @@ img[loading="lazy"]:not([data-src]) {
     position: absolute;
     font-size: 1.2rem;
     color: rgba(59, 130, 246, 0.15);
-    animation: globalFloat 20s ease-in-out infinite;
+    animation: globalFloat 10s ease-in-out infinite;
     transition: opacity 0.3s ease;
 }
 
@@ -2728,7 +2728,7 @@ section:not(.hero-section-new):not(.luu-y-section):not(.bg-hero-pattern):not(.su
     position: absolute;
     font-size: 2rem;
     color: rgba(255, 255, 255, 0.2);
-    animation: bankingIconFloat 12s ease-in-out infinite;
+    animation: bankingIconFloat 6s ease-in-out infinite;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
 
@@ -2891,7 +2891,7 @@ section:not(.hero-section-new):not(.luu-y-section):not(.bg-hero-pattern):not(.su
 @media (max-width: 768px) {
     .banking-icon {
         font-size: 1.5rem;
-        animation-duration: 16s;
+        animation-duration: 8s;
     }
     
 
@@ -3047,7 +3047,7 @@ section:not(.hero-section-new):not(.luu-y-section):not(.bg-hero-pattern):not(.su
 @media (max-width: 768px) {
     .global-particle {
         font-size: 1rem;
-        animation-duration: 15s;
+        animation-duration: 8s;
     }
     
     .corner-element {
@@ -3076,7 +3076,7 @@ section:not(.hero-section-new):not(.luu-y-section):not(.bg-hero-pattern):not(.su
     }
     
     .floating-3d-element {
-        animation-duration: 12s;
+        animation-duration: 6s;
         opacity: 0.7;
     }
     
@@ -3108,7 +3108,7 @@ section:not(.hero-section-new):not(.luu-y-section):not(.bg-hero-pattern):not(.su
     }
     
     .floating-3d-element {
-        animation-duration: 10s;
+        animation-duration: 5s;
     }
     
     .enhanced-bg-pattern {
@@ -3156,7 +3156,7 @@ section:not(.hero-section-new):not(.luu-y-section):not(.bg-hero-pattern):not(.su
 
 .floating-3d-element {
     position: absolute;
-    animation: advanced3DFloat 15s ease-in-out infinite;
+    animation: advanced3DFloat 8s ease-in-out infinite;
     filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.1));
     transition: transform 0.3s ease;
 }
@@ -3731,7 +3731,7 @@ section:not(.hero-section-new):not(.luu-y-section):not(.bg-hero-pattern):not(.su
 
 /* Floating Icons Enhanced - Slower and gentler */
 .floating-icon-enhanced {
-    animation: floatEnhanced 12s ease-in-out infinite;
+    animation: floatEnhanced 6s ease-in-out infinite;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
     transition: all 0.6s ease;
 }
