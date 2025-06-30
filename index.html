@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gia Sư Tri Thức - Địa chỉ uy tín cho gia sư với danh sách lớp học mới cập nhật liên tục. Đăng ký nhận lớp ngay!">
+    <meta name="keywords" content="gia sư, dạy kèm, học thêm, trung tâm gia sư, gia sư tri thức">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Performance optimization -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//images.unsplash.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//img.vietqr.io">
+    
+    <title>Gia Sư Tri Thức - Địa Chỉ Uy Tín Cho Gia Sư</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome - defer loading -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a',
+                        secondary: '#1e40af',
+                        accent: '#f59e0b',
+                        navy: '#0f172a'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "linear-gradient(135deg, #1e40af 0%, #1e3a8a 50%, #0f172a 100%)",
+                        'card-gradient': "linear-gradient(145deg, #ffffff 0%, #f8fafc 100%)"
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" as="style">
+    <link rel="preload" href="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" as="image">
+    
+    <!-- Google Fonts with display=swap for better performance -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-50 overflow-x-hidden">
+    
+    <!-- Global floating background particles -->
+    <div class="global-floating-particles">
+        <div class="global-particle book floating-icon-enhanced">📚</div>
+        <div class="global-particle lightbulb floating-icon-enhanced">💡</div>
+        <div class="global-particle atom floating-icon-enhanced">⚛️</div>
+        <div class="global-particle calculator floating-icon-enhanced">🔢</div>
+        <div class="global-particle globe floating-icon-enhanced">🌍</div>
+        <div class="global-particle graduation floating-icon-enhanced">🎓</div>
+        <div class="global-particle pencil floating-icon-enhanced">✏️</div>
+        <div class="global-particle star floating-icon-enhanced">⭐</div>
+        <div class="global-particle chart floating-icon-enhanced">📊</div>
+        <div class="global-particle flask floating-icon-enhanced">🧪</div>
+        <div class="global-particle dna floating-icon-enhanced">🧬</div>
+        <div class="global-particle microscope floating-icon-enhanced">🔬</div>
+    </div>
+    
+    <!-- Corner decorative elements -->
+    <div class="corner-decorations">
+        <div class="corner-element corner-tl"></div>
+        <div class="corner-element corner-tr"></div>
+        <div class="corner-element corner-bl"></div>
+        <div class="corner-element corner-br"></div>
+    </div>
+    
+    <!-- Advanced 3D Floating Elements -->
+    <div class="advanced-floating-elements">
+        <div class="floating-3d-element pencil-3d"></div>
+        <div class="floating-3d-element eraser-3d"></div>
+        <div class="floating-3d-element paper-plane-3d"></div>
+        <div class="floating-3d-element cube-3d">
+            <div class="cube-face cube-front"></div>
+            <div class="cube-face cube-back"></div>
+            <div class="cube-face cube-right"></div>
+            <div class="cube-face cube-left"></div>
+            <div class="cube-face cube-top"></div>
+            <div class="cube-face cube-bottom"></div>
+        </div>
+        <div class="floating-3d-element ruler-3d"></div>
+        <div class="floating-3d-element calculator-3d"></div>
+    </div>
+    
+    <!-- Enhanced Background Patterns -->
+    <div class="enhanced-bg-pattern"></div>
+    <div class="edu-dot-pattern"></div>
+    
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-800 to-blue-900 text-white shadow-2xl relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/10"></div>
+        <!-- Floating particles -->
+        <div class="floating-particles">
+            <div class="particle atom-1"><i class="fas fa-atom"></i></div>
+            <div class="particle bulb-1"><i class="fas fa-lightbulb"></i></div>
+            <div class="particle book-1"><i class="fas fa-book"></i></div>
+            <div class="particle graduation-1"><i class="fas fa-graduation-cap"></i></div>
+            <div class="particle calculator-1"><i class="fas fa-calculator"></i></div>
+            <div class="particle globe-1"><i class="fas fa-globe"></i></div>
+        </div>
+        
+        <div class="container mx-auto px-4 py-4 relative z-10">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-3xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">GIA SƯ TRI THỨC</h1>
+                    <p class="text-blue-100 text-sm font-medium">ĐỊA CHỈ UY TÍN CHO GIA SƯ</p>
+                </div>
+                <div class="hidden md:block">
+                    <a href="tel:0976148149" class="bg-white/20 hover:bg-white/30 px-6 py-3 rounded-full transition-all duration-300 flex items-center gap-2 backdrop-blur-sm border border-white/20">
+                        <i class="fas fa-phone text-yellow-400"></i>
+                        <span class="font-semibold">0976.148.149</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-xl sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-600 focus:outline-none transition-colors">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 mx-auto">
+                    <a href="#mon-hoc" class="nav-link text-gray-700 hover:text-blue-600 font-semibold py-4 px-4 border-b-3 border-transparent hover:border-blue-600 transition-all duration-300 relative">Môn học</a>
+                    <a href="#tai-khoan" class="nav-link text-gray-700 hover:text-blue-600 font-semibold py-4 px-4 border-b-3 border-transparent hover:border-blue-600 transition-all duration-300 relative">Tài khoản giao dịch</a>
+                    <a href="#danh-sach-lop" class="nav-link text-gray-700 hover:text-blue-600 font-semibold py-4 px-4 border-b-3 border-transparent hover:border-blue-600 transition-all duration-300 relative">Danh sách lớp</a>
+                    <a href="#luu-y" class="nav-link text-gray-700 hover:text-blue-600 font-semibold py-4 px-4 border-b-3 border-transparent hover:border-blue-600 transition-all duration-300 relative">Lưu ý</a>
+                    <a href="#noi-quy" class="nav-link text-gray-700 hover:text-blue-600 font-semibold py-4 px-4 border-b-3 border-transparent hover:border-blue-600 transition-all duration-300 relative">Nội quy nhận lớp</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4 bg-white border-t border-gray-100">
+                <a href="#mon-hoc" class="block py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-4 rounded-lg font-medium transition-all">Môn học</a>
+                <a href="#tai-khoan" class="block py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-4 rounded-lg font-medium transition-all">Tài khoản giao dịch</a>
+                <a href="#danh-sach-lop" class="block py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-4 rounded-lg font-medium transition-all">Danh sách lớp</a>
+                <a href="#luu-y" class="block py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-4 rounded-lg font-medium transition-all">Lưu ý</a>
+                <a href="#noi-quy" class="block py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-4 rounded-lg font-medium transition-all">Nội quy nhận lớp</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section-new text-white py-24 relative overflow-hidden min-h-[80vh] flex items-center">
+        <!-- Background Image -->
+        <div class="hero-bg-wrapper">
+            <img src="images/co-gai-banner.png" 
+                 alt="Students studying background" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <!-- Floating Graphics -->
+        <div class="floating-graphics-new">
+            <!-- Science/Education Icons -->
+            <div class="float-graphic graphic-1">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-blue-300/60">
+                    <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2M21 9V7L15 1H6C4.89 1 4 1.89 4 3V21C4 22.11 4.89 23 6 23H18C19.11 23 20 22.11 20 21V9H21M13 11V18H11V11H13M10 8V10H8V8H10M16 8V10H14V8H16Z"/>
+                </svg>
+            </div>
+            
+            <div class="float-graphic graphic-2">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-300/60">
+                    <path d="M12,2A7,7 0 0,0 5,9C5,11.38 6.19,13.47 8,14.74V17A1,1 0 0,0 9,18H15A1,1 0 0,0 16,17V14.74C17.81,13.47 19,11.38 19,9A7,7 0 0,0 12,2M9,21A1,1 0 0,0 10,22H14A1,1 0 0,0 15,21V20H9V21Z"/>
+                </svg>
+            </div>
+            
+            <div class="float-graphic graphic-3">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7 text-cyan-300/60">
+                    <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,19.93C7.05,19.44 4,16.08 4,12C4,11.38 4.08,10.78 4.21,10.21L9,15V16A2,2 0 0,0 11,18M17.9,17.39C17.64,16.58 16.9,16 16,16H15V13A1,1 0 0,0 14,12H8V10H10A1,1 0 0,0 11,9V7H13A2,2 0 0,0 15,5V4.59C17.93,5.77 20,8.64 20,12C20,14.08 19.2,15.97 17.9,17.39Z"/>
+                </svg>
+            </div>
+            
+            <div class="float-graphic graphic-4">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-purple-300/60">
+                    <path d="M1.39,18.36L3.16,16.6L4.58,18L5.64,16.95L4.22,15.54L5.64,14.12L8.11,16.6L9.17,15.54L6.7,13.06L8.11,11.65L9.53,13.06L10.59,12L9.17,10.59L10.59,9.17L13.06,11.65L14.12,10.59L11.65,8.11L13.06,6.7L14.47,8.11L15.54,7.05L14.12,5.64L15.54,4.22L18,6.7L19.07,5.64L16.6,3.16L18.36,1.39L22.61,5.64L5.64,22.61L1.39,18.36Z"/>
+                </svg>
+            </div>
+            
+            <div class="float-graphic graphic-5">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-orange-300/60">
+                    <path d="M22,21H2V3H4V19H6V10H10V19H12V6H16V19H18V14H22V21Z"/>
+                </svg>
+            </div>
+            
+            <div class="float-graphic graphic-6">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-pink-300/60">
+                    <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.46,13.97L5.82,21L12,17.27Z"/>
+                </svg>
+            </div>
+
+            <!-- Geometric Shapes -->
+            <div class="float-graphic graphic-7 geometric-triangle"></div>
+            <div class="float-graphic graphic-8 geometric-circle"></div>
+            <div class="float-graphic graphic-9 geometric-square"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="hero-content-new">
+                    <!-- Logo -->
+                    <div class="hero-logo-new mb-8">
+                        <div class="logo-diamond-new">
+                            <div class="logo-lines-new">
+                                <div class="line-new line-1"></div>
+                                <div class="line-new line-2"></div>
+                                <div class="line-new line-3"></div>
+                            </div>
+                            <div class="logo-text-new">GIA SƯ<br>TRI THỨC</div>
+                        </div>
+                    </div>
+
+                    <!-- Main Heading -->
+                    <h2 class="text-4xl md:text-6xl font-black mb-8 leading-tight text-reveal">
+                        <div class="text-content">
+                            <span class="bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-500 bg-clip-text text-transparent drop-shadow-2xl">
+                                ĐỊA CHỈ UY TÍN
+                            </span>
+                            <br>
+                            <span class="bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+                                CHO GIA SƯ
+                            </span>
+                        </div>
+                    </h2>
+                    
+                    <!-- Description Box -->
+                    <div class="hero-desc-box mb-8">
+                        <p class="text-lg md:text-xl mb-4 text-blue-100 leading-relaxed font-medium">
+                            Sứ mệnh của chúng tôi là cung cấp nhiều khóa học chất lượng cho đội ngũ gia sư cấy nhiệt huyết của
+                        </p>
+                        <p class="text-xl md:text-2xl font-bold text-yellow-300">Gia Sư Tri Thức</p>
+                        <p class="text-lg md:text-xl font-bold text-yellow-300 mt-2">UY TÍN TẠO NÊN NIỀM TIN</p>
+                    </div>
+                    
+                    <!-- Features -->
+                    <div class="grid grid-cols-3 gap-4 mb-8">
+                        <div class="feature-item-new">
+                            <div class="feature-icon-new">
+                                <i class="fas fa-shield-alt text-yellow-400"></i>
+                            </div>
+                            <span class="feature-text-new">Uy tín</span>
+                        </div>
+                        <div class="feature-item-new">
+                            <div class="feature-icon-new">
+                                <i class="fas fa-handshake text-yellow-400"></i>
+                            </div>
+                            <span class="feature-text-new">Bảo đảm</span>
+                        </div>
+                        <div class="feature-item-new">
+                            <div class="feature-icon-new">
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <span class="feature-text-new">Chất lượng</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 mb-6">
+                        <button class="cta-button bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white font-bold py-4 px-8 rounded-full shadow-2xl hover:shadow-yellow-500/25 transform hover:scale-105 transition-all duration-300">
+                            <i class="fab fa-facebook mr-3 text-xl"></i>
+                            INBOX FACEBOOK NHẬN LỚP NGAY
+                        </button>
+                        <button class="cta-button bg-white/20 hover:bg-white/30 text-white font-bold py-4 px-8 rounded-full backdrop-blur-sm border border-white/30 hover:border-white/50 transform hover:scale-105 transition-all duration-300">
+                            <i class="fas fa-eye mr-3 text-xl"></i>
+                            XEM LỚP FULL MÀN HÌNH
+                        </button>
+                    </div>
+                    
+                    <p class="text-center text-white/80 text-sm">LỚP NÀY CÒN KHÔNG?</p>
+                </div>
+
+                <!-- Right Content - Main Image -->
+                <div class="hero-image-new hidden lg:block">
+                    <div class="main-tutor-image">
+                        <img src="images/co-gai-banner.png" 
+                             alt="Professional female tutor" class="tutor-img" loading="lazy">
+                        <!-- Floating mini icons around tutor -->
+                        <div class="mini-float mini-1 floating-icon-enhanced"><i class="fas fa-atom text-blue-300"></i></div>
+                        <div class="mini-float mini-2 floating-icon-enhanced"><i class="fas fa-lightbulb text-yellow-300"></i></div>
+                        <div class="mini-float mini-3 floating-icon-enhanced"><i class="fas fa-globe text-cyan-300"></i></div>
+                        <div class="mini-float mini-4 floating-icon-enhanced"><i class="fas fa-graduation-cap text-purple-300"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section id="mon-hoc" class="subjects-section py-20 relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <!-- Ngôn Ngữ Section -->
+            <div class="mb-16">
+                <div class="text-center mb-12">
+                    <h3 class="text-4xl font-bold text-blue-800 mb-4">CÁC LỚP CẦN GIA SƯ VỀ NGÔN NGỮ</h3>
+                    <p class="text-lg text-gray-700 italic">Ấn vào để xem chi tiết các lớp đang cần tìm gia sư!</p>
+                </div>
+                
+                <div class="subject-grid-container">
+                    <div class="subject-grid">
+                        <div class="subject-cell cell-white">
+                            <span class="subject-name">Tiếng Anh</span>
+                        </div>
+                        <div class="subject-cell cell-blue">
+                            <span class="subject-name">Tiếng Trung</span>
+                        </div>
+                        <div class="subject-cell cell-white">
+                            <span class="subject-name">Tiếng Hàn</span>
+                        </div>
+                        <div class="subject-cell cell-blue">
+                            <span class="subject-name">Tiếng Pháp</span>
+                        </div>
+                        <div class="subject-cell cell-white">
+                            <span class="subject-name">Tiếng Nhật</span>
+                        </div>
+                        <div class="subject-cell cell-blue">
+                            <span class="subject-name">Tiếng Đức</span>
+                        </div>
+                        <div class="subject-cell cell-white">
+                            <span class="subject-name">Tiếng Nga</span>
+                        </div>
+                        <div class="subject-cell cell-blue">
+                            <span class="subject-name">Tiếng Tây Ba Nha</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Kỹ Năng Section -->
+            <div>
+                <div class="text-center mb-12">
+                    <h3 class="text-4xl font-bold text-blue-800 mb-4">CÁC LỚP CẦN GIA SƯ VỀ KỸ NĂNG</h3>
+                    <p class="text-lg text-gray-700 italic">Ấn vào để xem chi tiết các lớp đang cần tìm gia sư!</p>
+                </div>
+                
+                <div class="subject-grid-container">
+                    <div class="subject-grid">
+                        <div class="subject-cell cell-white">
+                            <span class="subject-name">Guitar</span>
+                        </div>
+                        <div class="subject-cell cell-blue">
+                            <span class="subject-name">Piano</span>
+                        </div>
+                        <div class="subject-cell cell-white">
+                            <span class="subject-name">Organ</span>
+                        </div>
+                        <div class="subject-cell cell-blue">
+                            <span class="subject-name">Đàn tranh</span>
+                        </div>
+                        <div class="subject-cell cell-white">
+                            <span class="subject-name">Sáo</span>
+                        </div>
+                        <div class="subject-cell cell-blue">
+                            <span class="subject-name">Thanh nhạc</span>
+                        </div>
+                        <div class="subject-cell cell-white">
+                            <span class="subject-name">Cờ tướng</span>
+                        </div>
+                        <div class="subject-cell cell-blue">
+                            <span class="subject-name">Cờ vua</span>
+                        </div>
+                        <div class="subject-cell cell-white">
+                            <span class="subject-name">Vẽ</span>
+                        </div>
+                        <div class="subject-cell cell-blue">
+                            <span class="subject-name">Nhảy</span>
+                        </div>
+                        <div class="subject-cell cell-white">
+                            <span class="subject-name">Tin học</span>
+                        </div>
+                        <div class="subject-cell cell-blue">
+                            <span class="subject-name">Kế toán</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Class Check Section -->
+    <section class="modern-section py-20 relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-blue-800 mb-4">CÁCH KIỂM TRA LỚP</h3>
+                <p class="text-lg text-gray-700">Lớp mới được cập nhật liên tục 3 phút 1 lần.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="glass-card-enhanced rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                    <div class="text-center">
+                        <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-desktop text-3xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4 text-gray-800">Trên máy tính</h4>
+                        <p class="text-lg text-gray-600 font-medium">Dùng tổ hợp phím "Ctrl + F" để kiểm tra tình trạng của lớp</p>
+                    </div>
+                </div>
+                
+                <div class="glass-card-enhanced rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                    <div class="text-center">
+                        <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-mobile-alt text-3xl text-green-600"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4 text-gray-800">Trên điện thoại</h4>
+                        <p class="text-lg text-gray-600 font-medium">Truy cập bằng trình duyệt Chrome, chọn mục "Tìm trong trang" và nhập từ khóa</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                    XEM LỚP FULL MÀN HÌNH
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="modern-section py-20 relative overflow-hidden scroll-particles">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold text-blue-800 mb-6 scroll-fade-up">QUY TRÌNH NHẬN LỚP</h3>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12" data-stagger-parent>
+                <div class="text-center group enhanced-card scroll-scale scroll-stagger-1">
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300 magnetic">
+                        1
+                    </div>
+                    <h4 class="text-xl font-semibold mb-4 text-gray-800">Đăng ký làm gia sư</h4>
+                    <p class="text-gray-600">Đăng ký thông tin cá nhân và chuyên môn</p>
+                </div>
+                
+                <div class="text-center group enhanced-card scroll-scale scroll-stagger-2">
+                    <div class="bg-gradient-to-br from-green-500 to-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300 magnetic">
+                        2
+                    </div>
+                    <h4 class="text-xl font-semibold mb-4 text-gray-800">Copy thông tin lớp và nhắn tin qua Facebook</h4>
+                    <p class="text-gray-600">Trao đổi về tin và đóng phí nhận lớp là 25%</p>
+                </div>
+                
+                <div class="text-center group enhanced-card scroll-scale scroll-stagger-3">
+                    <div class="bg-gradient-to-br from-purple-500 to-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300 magnetic">
+                        3
+                    </div>
+                    <h4 class="text-xl font-semibold mb-4 text-gray-800">HỌC PHÍ VỀ TAY</h4>
+                    <p class="text-gray-600">Nhận lương sau khi hoàn thành dạy học</p>
+                </div>
+            </div>
+            
+            <div class="text-center space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center scroll-fade-up">
+                <button class="w-full sm:w-auto bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 magnetic pulse-on-scroll">
+                    Nhắn tin ngay với trung tâm
+                </button>
+                <button class="w-full sm:w-auto bg-white border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 magnetic hover-glow">
+                    Đọc nội quy nhận lớp ngay
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Class List Section -->
+    <section id="danh-sach-lop" class="modern-section py-20 relative overflow-hidden scroll-particles">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-blue-800 mb-6 scroll-fade-up">DANH SÁCH LỚP MỚI LIÊN TỤC CẬP NHẬT!</h3>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-lg p-8 enhanced-card scroll-scale">
+                <!-- Search Box -->
+                <div class="mb-6 scroll-fade-left">
+                    <div class="flex rounded-xl border border-gray-200 overflow-hidden shadow-sm hover-lift">
+                        <input type="text" placeholder="Tìm kiếm lớp học..." class="flex-1 px-6 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" id="classSearch">
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 transition-colors magnetic">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="text-center scroll-fade-right">
+                    <div class="bg-blue-50 rounded-xl p-6 mb-6 hover-lift">
+                        <span class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium mr-4 magnetic">LỚP NÀY CÒN KHÔNG?</span>
+                        <span class="text-gray-600">Lớp mới được cập nhật liên tục 3 phút 1 lần</span>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Danh sách lớp sẽ được hiển thị ở đây</h4>
+                    <p class="text-gray-600">Liên hệ trung tâm để xem danh sách lớp mới nhất</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Notes Section -->
+    <section id="luu-y" class="luu-y-section py-20 relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <!-- Header - Badge sẽ được positioned absolute -->
+            
+            <div class="luu-y-content-wrapper">
+                <!-- Badge "Lưu ý" positioned ở trên container, không che nội dung -->
+                <div class="luu-y-badge-header">
+                    Lưu ý
+                </div>
+                
+                <!-- Left Column -->
+                <div class="luu-y-left-column">
+                    <!-- Tiền Lương Section -->
+                    <div class="luu-y-section-block">
+                        <h3 class="luu-y-section-title">TIỀN LƯƠNG:</h3>
+                        <div class="luu-y-items">
+                            <div class="luu-y-item">
+                                <i class="fas fa-check-circle luu-y-icon"></i>
+                                <p class="luu-y-text">Tôi hạn động học phí gia sư vui lòng hỗ trợ gửi STK CỦA TRUNG TÂM thông báo cho phụ huynh/học viên về việc thanh toán học phí đúng hạn để tránh cuộc gọi nhắc nhở làm phiền từ phía Trung tâm. Nội dung thanh toán: "HỌC PHÍ + MÃ LỚP".</p>
+                            </div>
+                            <div class="luu-y-item">
+                                <i class="fas fa-check-circle luu-y-icon"></i>
+                                <p class="luu-y-text">Khi hoàn tất tháng giảng dạy, gia sư hãy thông báo về việc thanh toán cho tháng học kế tiếp. Trung tâm sẽ thanh toán Lương cho gia sư khi nhận được biên lai chuyển tiền. Nếu phụ huynh/học viên chưa thanh toán học phí do lý do nào đó, xin gia sư báo lại để trung tâm giải quyết. Gia sư sẽ chỉ tiếp tục dạy khi học phí đã được thanh toán.</p>
+                            </div>
+                            <div class="luu-y-item">
+                                <i class="fas fa-check-circle luu-y-icon"></i>
+                                <p class="luu-y-text">Lớp dạy Offline thu vào cuối tháng (30 ngày kể từ ngày bắt đầu)</p>
+                            </div>
+                            <div class="luu-y-item">
+                                <i class="fas fa-check-circle luu-y-icon"></i>
+                                <p class="luu-y-text">Lớp dạy Online sẽ thu tiền TRƯỚC kể từ buổi thứ 2</p>
+                            </div>
+                            <div class="luu-y-item">
+                                <i class="fas fa-check-circle luu-y-icon"></i>
+                                <p class="luu-y-text">Gia sư nhận lương từ trung tâm sẽ được thanh toán vào cuối tháng</p>
+                            </div>
+                            <div class="luu-y-item">
+                                <i class="fas fa-check-circle luu-y-icon"></i>
+                                <p class="luu-y-text">Gia sư nhận lương trực tiếp từ học viên/phụ huynh thì chỉ được nhận lương trước theo tuần</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Thời Lượng Section -->
+                    <div class="luu-y-section-block">
+                        <h3 class="luu-y-section-title">THỜI LƯỢNG DẠY MỖI BUỔI:</h3>
+                        <div class="luu-y-items">
+                            <div class="luu-y-item">
+                                <i class="fas fa-check-circle luu-y-icon"></i>
+                                <p class="luu-y-text">Lớp sinh viên 2h/buổi</p>
+                            </div>
+                            <div class="luu-y-item">
+                                <i class="fas fa-check-circle luu-y-icon"></i>
+                                <p class="luu-y-text">Lớp giáo viên 1h30p/buổi (trừ các lớp ĐẶN chỉ dạy 1h/buổi, lớp TIN HỌC dạy 1h30p/buổi không phân biệt GV hay SV).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column -->
+                <div class="luu-y-right-column">
+                    <!-- Liên Hệ Section -->
+                    <div class="luu-y-section-block">
+                        <h3 class="luu-y-section-title luu-y-title-orange">LIÊN HỆ:</h3>
+                        <div class="luu-y-items">
+                            <div class="luu-y-item">
+                                <i class="fas fa-check-circle luu-y-icon"></i>
+                                <p class="luu-y-text">Sau khi có thông tin lớp gia sư gọi 2 cuộc, nếu PH/HV không nghe máy thì gia sư để lại tin nhắn rồi 30 phút sau gọi lại thêm 2 cuộc. Nếu vẫn chưa nghe máy thì báo lại trung tâm để trung tâm hướng dẫn thêm.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image floating outside container with decorative elements -->
+                    <div class="luu-y-floating-image">
+                        <img src="images/gia-su.png" 
+                             alt="Gia sư đang chỉ bài cho học sinh" class="luu-y-floating-img" loading="lazy">
+                        
+                        <!-- Floating decorative elements around the image -->
+                        <div class="luu-y-float-decorations">
+                            <div class="luu-y-float-item rocket-float">🚀</div>
+                            <div class="luu-y-float-item star-float star-1">⭐</div>
+                            <div class="luu-y-float-item star-float star-2">⭐</div>
+                            <div class="luu-y-float-item star-float star-3">⭐</div>
+                            <div class="luu-y-float-item cloud-float cloud-1">☁️</div>
+                            <div class="luu-y-float-item cloud-float cloud-2">☁️</div>
+                            <div class="luu-y-float-item bulb-float">💡</div>
+                            <div class="luu-y-float-item book-float">📚</div>
+                            <div class="luu-y-float-item pencil-float">✏️</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Action Buttons -->
+            <div class="luu-y-actions">
+                <button class="luu-y-btn luu-y-btn-primary">
+                    <i class="fas fa-question-circle"></i>
+                    LỚP NÀY CÒN KHÔNG?
+                </button>
+                <button class="luu-y-btn luu-y-btn-secondary">
+                    <i class="fas fa-expand-arrows-alt"></i>
+                    XEM LỚP FULL MÀN HÌNH
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section - Giống như hình -->
+    <section id="noi-quy" class="bg-hero-pattern py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/10"></div>
+        
+        <!-- Background particles giống hình -->
+        <div class="floating-icons-rules">
+            <div class="rule-icon icon-r1"><i class="fas fa-atom text-blue-300/30"></i></div>
+            <div class="rule-icon icon-r2"><i class="fas fa-dna text-cyan-300/30"></i></div>
+            <div class="rule-icon icon-r3"><i class="fas fa-lightbulb text-yellow-300/30"></i></div>
+            <div class="rule-icon icon-r4"><i class="fas fa-microscope text-purple-300/30"></i></div>
+            <div class="rule-icon icon-r5"><i class="fas fa-flask text-green-300/30"></i></div>
+            <div class="rule-icon icon-r6"><i class="fas fa-graduation-cap text-pink-300/30"></i></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-black mb-6">
+                    <span class="bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-500 bg-clip-text text-transparent">
+                        NỘI QUY NHẬN LỚP
+                    </span>
+                </h2>
+                <p class="text-xl text-white mb-4 font-medium">
+                    Để đảm bảo quyền lợi, hãy đọc kỹ trước khi nhận lớp. Gia sư vi phạm sẽ
+                </p>
+                <p class="text-xl text-white font-bold">
+                    bị trừ từ 50% đến 100% phí nhận lớp
+                </p>
+                
+                <div class="mt-8">
+                    <p class="text-blue-200 font-medium italic">NHẤP VÀO MŨI TÊN để đọc nội quy tiếp theo</p>
+                </div>
+            </div>
+            
+            <!-- Navigation arrows -->
+            <div class="absolute left-8 top-1/2 transform -translate-y-1/2 z-20">
+                <button class="nav-arrow-left bg-gradient-to-r from-orange-400 to-red-500 hover:from-orange-500 hover:to-red-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110">
+                    <i class="fas fa-chevron-left text-xl"></i>
+                </button>
+            </div>
+            <div class="absolute right-8 top-1/2 transform -translate-y-1/2 z-20">
+                <button class="nav-arrow-right bg-gradient-to-r from-orange-400 to-red-500 hover:from-orange-500 hover:to-red-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110">
+                    <i class="fas fa-chevron-right text-xl"></i>
+                </button>
+            </div>
+            
+            <!-- Rules Cards Container -->
+            <div class="max-w-6xl mx-auto">
+                <div id="rules-slider" class="grid md:grid-cols-2 gap-8 mb-16">
+                    <!-- Card 1 -->
+                    <div class="rule-card bg-white rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 relative overflow-hidden group">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-red-500"></div>
+                        <div class="flex items-start space-x-6">
+                            <div class="flex-shrink-0">
+                                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-4 rounded-2xl">
+                                    <i class="fas fa-file-contract text-3xl text-blue-600"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold mb-4">
+                                    <span class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Nội quy 1</span>
+                                </h3>
+                                <p class="text-gray-700 leading-relaxed">
+                                    GV-SV chọn lớp phù hợp, <strong>gọi điện hoặc nhắn tin</strong> đăng ký với trung tâm. Gia sư nhận lớp đóng 25% phí giới thiệu tiền lương tháng đầu tiên (1 lớp chỉ đóng 1 lần). Sau đó, trung tâm sẽ cung cấp địa chỉ và số điện thoại của phụ huynh, học viên.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="rule-card bg-white rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 relative overflow-hidden group">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-red-500"></div>
+                        <div class="flex items-start space-x-6">
+                            <div class="flex-shrink-0">
+                                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-4 rounded-2xl">
+                                    <i class="fas fa-clock text-3xl text-blue-600"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold mb-4">
+                                    <span class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Nội quy 2</span>
+                                </h3>
+                                <p class="text-gray-700 leading-relaxed">
+                                    Sau khi có thông tin lớp, gia sư cần <strong>liên hệ ngay</strong> để hẹn lịch và nhắn tin báo lại cho trung tâm ngay chậm nhất là sau 2h. Vui lòng hẹn gặp (hoặc dạy thử đối với lớp Online) ngay trong ngày hôm đó hoặc trễ nhất là 1 ngày sau. Nếu <strong>không kịp có thể bị mất lớp</strong> do phụ huynh/học viên chọn gia sư nào đến gặp/dạy sớm hơn.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <button class="action-btn bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white font-bold py-4 px-12 rounded-full shadow-2xl hover:shadow-yellow-500/25 transform hover:scale-105 transition-all duration-300 text-lg">
+                        XEM LỚP FULL MÀN HÌNH
+                    </button>
+                    <button class="action-btn bg-white hover:bg-gray-50 text-gray-800 font-bold py-4 px-12 rounded-full shadow-2xl border-2 border-gray-200 hover:border-gray-300 transform hover:scale-105 transition-all duration-300 text-lg">
+                        LỚP NÀY CÒN KHÔNG?
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bank Account Section -->
+    <section id="tai-khoan" class="bank-account-section py-20 relative overflow-hidden">
+        <!-- Banking floating icons -->
+        <div class="banking-floating-icons">
+            <div class="banking-icon credit-card-1">💳</div>
+            <div class="banking-icon money-1">💰</div>
+            <div class="banking-icon bank-1">🏦</div>
+            <div class="banking-icon wallet-1">👛</div>
+            <div class="banking-icon coins-1">🪙</div>
+            <div class="banking-icon payment-1">💸</div>
+            <div class="banking-icon safe-1">🔒</div>
+            <div class="banking-icon chart-1">📈</div>
+            <div class="banking-icon shield-1">🛡️</div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="bank-section-title scroll-fade-up">
+                    THÔNG TIN TÀI KHOẢN<br>GIAO DỊCH
+                </h2>
+            </div>
+            
+            <div class="bank-cards-grid" data-stagger-parent>
+                <!-- VPBank -->
+                <div class="bank-card-new enhanced-card scroll-scale scroll-stagger-1">
+                    <div class="bank-logo image-reveal">
+                        <img src="images/vpbank.png" alt="VPBank" class="bank-logo-img" loading="lazy">
+                    </div>
+                    <div class="bank-info">
+                        <h3 class="bank-name">VPBANK</h3>
+                        <div class="account-detail">
+                            <span class="detail-label">Số tài khoản:</span>
+                            <span class="detail-value copy-number" data-account="147036418">147036418</span>
+                        </div>
+                        <div class="account-detail">
+                            <span class="detail-label">Chủ tài khoản:</span>
+                            <span class="detail-value">Lương Đình Thoại</span>
+                        </div>
+                        <div class="account-detail">
+                            <span class="detail-label">Chi nhánh:</span>
+                            <span class="detail-value">TP. Hồ Chí Minh</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vietcombank -->
+                <div class="bank-card-new enhanced-card scroll-scale scroll-stagger-2">
+                    <div class="bank-logo image-reveal">
+                        <img src="images/vietcombank.png" alt="Vietcombank" class="bank-logo-img" loading="lazy">
+                    </div>
+                    <div class="bank-info">
+                        <h3 class="bank-name">VIETCOMBANK</h3>
+                        <div class="account-detail">
+                            <span class="detail-label">Số tài khoản:</span>
+                            <span class="detail-value copy-number" data-account="0201000420125">0201000420125</span>
+                        </div>
+                        <div class="account-detail">
+                            <span class="detail-label">Chủ tài khoản:</span>
+                            <span class="detail-value">Lương Đình Thoại</span>
+                        </div>
+                        <div class="account-detail">
+                            <span class="detail-label">Chi nhánh:</span>
+                            <span class="detail-value">Hà Tĩnh</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agribank -->
+                <div class="bank-card-new enhanced-card scroll-scale scroll-stagger-3">
+                    <div class="bank-logo image-reveal">
+                        <img src="images/agribank.png" alt="Agribank" class="bank-logo-img" loading="lazy">
+                    </div>
+                    <div class="bank-info">
+                        <h3 class="bank-name">AGRIBANK</h3>
+                        <div class="account-detail">
+                            <span class="detail-label">Số tài khoản:</span>
+                            <span class="detail-value copy-number" data-account="6320205459501">6320205459501</span>
+                        </div>
+                        <div class="account-detail">
+                            <span class="detail-label">Chủ tài khoản:</span>
+                            <span class="detail-value">Lương Đình Thoại</span>
+                        </div>
+                        <div class="account-detail">
+                            <span class="detail-label">Chi nhánh:</span>
+                            <span class="detail-value">TP. Hồ Chí Minh</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Viet Capital Bank -->
+                <div class="bank-card-new enhanced-card scroll-scale scroll-stagger-4">
+                    <div class="bank-logo image-reveal">
+                        <img src="images/vietcapital.png" alt="Viet Capital Bank" class="bank-logo-img" loading="lazy">
+                    </div>
+                    <div class="bank-info">
+                        <h3 class="bank-name">VIET CAPITAL BANK</h3>
+                        <div class="account-detail">
+                            <span class="detail-label">Số tài khoản:</span>
+                            <span class="detail-value copy-number" data-account="8007041253694">8007041253694</span>
+                        </div>
+                        <div class="account-detail">
+                            <span class="detail-label">Chủ tài khoản:</span>
+                            <span class="detail-value">Lương Đình Thoại</span>
+                        </div>
+                        <div class="account-detail">
+                            <span class="detail-label">Chi nhánh:</span>
+                            <span class="detail-value">TP. Hồ Chí Minh</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VietinBank -->
+                <div class="bank-card-new enhanced-card scroll-scale scroll-stagger-5">
+                    <div class="bank-logo image-reveal">
+                        <img src="images/viettinbank.png" alt="VietinBank" class="bank-logo-img" loading="lazy">
+                    </div>
+                    <div class="bank-info">
+                        <h3 class="bank-name">VIETINBANK</h3>
+                        <div class="account-detail">
+                            <span class="detail-label">Số tài khoản:</span>
+                            <span class="detail-value copy-number" data-account="105001273439">105001273439</span>
+                        </div>
+                        <div class="account-detail">
+                            <span class="detail-label">Chủ tài khoản:</span>
+                            <span class="detail-value">Lương Đình Thoại</span>
+                        </div>
+                        <div class="account-detail">
+                            <span class="detail-label">Chi nhánh:</span>
+                            <span class="detail-value">TP. Hồ Chí Minh</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sacombank -->
+                <div class="bank-card-new enhanced-card scroll-scale scroll-stagger-6">
+                    <div class="bank-logo image-reveal">
+                        <img src="images/sacombank.png" alt="Sacombank" class="bank-logo-img" loading="lazy">
+                    </div>
+                    <div class="bank-info">
+                        <h3 class="bank-name">SACOMBANK</h3>
+                        <div class="account-detail">
+                            <span class="detail-label">Số tài khoản:</span>
+                            <span class="detail-value copy-number" data-account="060145338071">060145338071</span>
+                        </div>
+                        <div class="account-detail">
+                            <span class="detail-label">Chủ tài khoản:</span>
+                            <span class="detail-value">Lương Đình Thoại</span>
+                        </div>
+                        <div class="account-detail">
+                            <span class="detail-label">Chi nhánh:</span>
+                            <span class="detail-value">TP. Hồ Chí Minh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="text-center mt-12 scroll-fade-up">
+                <button class="bank-cta-button magnetic pulse-on-scroll morphing-bg" onclick="window.open('https://facebook.com', '_blank')">
+                    INBOX NHẬN LỚP NGAY
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">TRUNG TÂM GIA SƯ TRI THỨC</h4>
+                    <div class="space-y-3">
+                        <p class="flex items-center"><i class="fas fa-map-marker-alt text-yellow-400 mr-3"></i>Lô 03 Đường số 12, Tân Thới Nhất, Q12, Tp. Hồ Chí Minh</p>
+                        <p class="flex items-center"><i class="fas fa-phone text-yellow-400 mr-3"></i>0976.148.149</p>
+                        <p class="flex items-center"><i class="fas fa-envelope text-yellow-400 mr-3"></i>nhansu.giasutrithuc@gmail.com</p>
+                        <p class="flex items-center"><i class="fas fa-globe text-yellow-400 mr-3"></i>lopmoi.giasutrithuc.net</p>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-xl font-bold text-yellow-400 mb-4">Thời gian làm việc:</h5>
+                    <div class="space-y-2">
+                        <p><i class="fas fa-clock text-yellow-400 mr-2"></i>Thứ 2 - Thứ 7: 8 am - 10 pm</p>
+                        <p><i class="fas fa-clock text-yellow-400 mr-2"></i>Chủ nhật: 8 am - 6 pm</p>
+                    </div>
+                    <div class="mt-6">
+                        <button class="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white font-bold py-3 px-6 rounded-full transform hover:scale-105 transition-all duration-300 shadow-lg">
+                            <i class="fab fa-facebook mr-2"></i>INBOX NHẬN LỚP NGAY
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-8 border-gray-700">
+            <div class="text-center text-gray-400">
+                <p>&copy; 2024 Gia Sư Tri Thức. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Bottom Buttons -->
+    <div class="fixed-bottom-buttons">
+        <button class="fixed-btn fixed-btn-left" onclick="scrollToSection('danh-sach-lop')">
+            <i class="fas fa-question-circle mr-2"></i>
+            LỚP NÀY CÒN KHÔNG?
+        </button>
+        <button class="fixed-btn fixed-btn-right" onclick="scrollToSection('danh-sach-lop')">
+            <i class="fas fa-expand mr-2"></i>
+            XEM LỚP FULL MÀN HÌNH
+        </button>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html> 
